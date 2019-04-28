@@ -1,0 +1,49 @@
+.amazing {
+	padding: 90px 0 30px;
+	background-image: url('../img/amazing/amazing-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #666657;
+	@media(min-width: 768px) {
+		padding: 90px 0 90px;
+
+	}
+}
+.amazing-item {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	color:#fff;
+	margin: 0 15px 25px 0;
+	@media(min-width: 768px) {
+		margin: 0 15px 70px 0;
+	}
+}
+
+.item__icon {
+	font-size: 36px;
+	color:@orang-color;
+	margin-right: 30px;
+}
+.item__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.content__title {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.content__descr {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	max-width: 400px;
+	@media(min-width: 768px){
+		width: 100%;
+	}
+}

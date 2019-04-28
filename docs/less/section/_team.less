@@ -1,0 +1,80 @@
+.team {
+	padding: 95px 0px 0;
+}
+.team-card-margin {
+	margin-bottom: 30px;
+	@media(min-width: 1200px) {
+		margin-bottom: 0;
+	}
+}
+.card {
+	max-width: 270px;
+	text-align: center;
+	margin: 0px auto 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media(min-width: 768px) {
+		margin: 0 auto;
+	}
+}
+.card__img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	background-color: #ccc;
+	background-image: url('../img/placeholders/user-avatar-placeholder-big.png');
+	overflow:hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.card-content__title {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 300;
+	margin-bottom: 10px;
+	span {
+		color:@orang-color;
+	}
+}
+.card-content__descr {
+	line-height: 22px;
+	text-align: justify;
+	margin-bottom: 12px;
+}
+.social-icons {
+	span {
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		border-radius: 30px;
+		background-color: #f0f0f0;
+		margin-right: 5px;
+		padding: 9px;
+		font-size: 18px;
+		color: #666;
+		text-align: center;
+		transition: 0.2s linear;
+		cursor: pointer;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			color:#fff;
+			background-color: @orang-color;
+		}
+		a {
+			text-decoration: none;
+			color:inherit;
+			&:focus {
+				outline-color: @orang-color;
+			}
+		}
+	}
+}
+
+

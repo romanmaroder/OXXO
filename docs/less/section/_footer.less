@@ -1,0 +1,250 @@
+.footer {
+	background-color: #303030;
+	padding: 50px 0;
+}
+.footer-block {
+	color:#fff;
+	margin-bottom: 30px;
+	@media(min-width: 768px){
+		margin-bottom: 0;
+	}
+	.footer-block__title {
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 24px;
+		.fas, .far {
+			padding-right: 10px;
+		}
+	}
+	.footer-block__descr,
+	.info__adress,
+	.info__phone,
+	.info__email {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.info__email {
+		margin-bottom: 10px;
+	}
+	.info__social-icon {
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color:#fff;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			transition: 0.2s linear;
+			border:1px solid transparent;
+			@media (min-width: 768px)  {
+				margin-bottom: 0;
+			}
+			.fab {
+				font-size: 16px;
+				line-height: 20px;
+				width: 40px;
+				height: 40px;
+				border:1px solid #fff;
+				border-radius: 20px;
+				text-align: center;
+				padding: 8px;
+				&:hover {
+					border:1px solid #acabab;
+
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover .fab,
+			&:focus {
+				outline: none;
+				color:@orang-color;
+				border:1px solid @orang-color;
+
+			}
+		}
+	}
+	.posts-item {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		margin-bottom: 22px;
+		@media(min-width: 768px) {
+			justify-content: center;
+			
+		}
+	}
+	.post-item__img {
+		margin-right: 15px;
+		background-color: #ccc;
+	}
+	.post-item-content {
+		display: flex;
+		flex-direction: column;
+		font-weight: 300;
+		line-height: 20px;
+		.item-content__title {
+			margin-bottom: 5px;
+			line-height: 1;
+		}
+		.item-content__descr {
+			font-size: 13px;
+			p{
+				margin-bottom: 5px;
+			}
+		}
+		.item-content__date {
+			font-size: 13px;
+			color:@orang-color;
+		}
+	}
+	.services-items {
+		details {
+			margin: 15px 0;
+			p{
+				font-size: 13px;
+				line-height: 18px;
+			}
+		}
+		summary {
+			margin-bottom: 10px;
+			line-height: 1;
+			&:focus {
+				border:1px solid @orang-color;
+				outline: none;
+			}
+			&::-webkit-details-marker  {
+				display: none;
+			}
+			&:after {
+				content:"+";
+				color:#fff;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: @orang-color;	
+				float: right;
+				text-align: center;
+				padding: 1px 0;
+				font-size: 13px;
+				line-height: 1;
+			}
+		}
+		details[open] summary:after {
+			content: "-";
+			padding: 0;
+		}
+	}
+	.services-items--border {
+		border-bottom: 1px solid #fff;
+	}
+	p {
+		color: #acabab;
+	}
+
+}
+
+.footer-form{
+	.form-item {
+		height: 40px;
+		margin-bottom: 15px;
+		position: relative;
+	}
+	.form-item--message {
+		height: 75px;
+	}
+	.form-item--submit {
+		margin-top: 15px;
+		.fas, .far {
+			float: right;
+			left: 45px;
+		}
+	}
+	input,
+	textarea {
+		width: 100%;
+		padding: 8px 30px 12px 10px;
+		color:#000;
+		border:none;
+		border-radius: 2px;
+		font-weight: 300;
+		outline: none;
+		&:focus {
+			border:1px solid @orang-color;
+			padding: 7px 29px 11px 10px;
+
+		}
+	}
+	input[type="submit"] {
+		display: inline-block;
+		width: 115px;
+		padding: 11px 10px 10px 30px;
+		float:right;
+		font-size: 14px;
+		color: #fff;
+		font-weight: 300;
+		margin: 0;
+		cursor: pointer;
+		&:hover {
+			color:@orang-color;
+		}
+	}
+	input[placeholder],
+	textarea[placeholder] {
+		text-overflow: ellipsis;
+	}
+	.fas, .far {
+		width: 26px;
+		height: 26px;
+		font-size: 16px;
+		line-height: 36px;
+		margin-left: -26px;
+		position: relative;
+		z-index: 2;
+		color:#ccc;
+		float: right;
+	}
+
+	.fas + input,
+	.far + input{
+		padding-right: 26px;
+	}
+	textarea {
+		resize: vertical;
+		min-height: 75px;
+		max-height: 100px;
+	}
+	input[required] + label,
+	textarea[required] + label{
+		color: #acabab;
+		font-size: 14px;
+		font-weight: 300;
+		position: relative;
+		bottom: 33px;
+		left: 10px;
+	}
+	textarea[required] + label{
+		position: absolute;
+		top: 15%;
+		left: 10px;
+		transform: translate(0%,-15%);
+	} 
+	input[required] + label span,
+	textarea[required] + label span{
+		color: @orang-color;
+	}
+	input[required]:invalid + label,
+	textarea[required]:invalid  + label  {
+		display: inline-block;
+	}
+
+	/* hide the placeholder when input has some text typed in */
+	input[required]:valid + label,
+	input[required]:focus + label,
+	textarea[required]:valid + label,
+	textarea[required]:focus + label  {
+		display: none;
+	}
+
+}

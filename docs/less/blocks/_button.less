@@ -1,0 +1,68 @@
+.button {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	padding: 25px 38px;
+	border:1px solid #fff;
+	background-color: transparent;
+	text-transform: uppercase;
+	text-decoration:none;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	transition: 0.2s linear;
+	user-select: none;
+	&--owl-content:hover,
+	&--owl-content-two:hover {
+		background-color: #fff;
+		color:#000;
+	}
+}
+
+.button--orang {
+	border-color:@orang-color;
+	border-radius: 4px;
+	background-color: @orang-color;
+	color:#fff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1;
+	padding: 15px 25px;
+	margin: 15px 0 20px;
+	@media(min-width: 768px) {
+		margin-top: 0;
+	}
+	&:hover {
+		background-color: #fff;
+		color:@orang-color;
+	}
+	&:first-child {
+		display: none;
+		@media(min-width: 768px) {
+			display: inline-block;
+		}
+	}
+	.fas,.far {
+		margin-right: 5px;
+	}
+}
+.button--owl-content,.button--owl-content-two {
+	display: none;
+	
+	@media(min-width: 768px) {
+		display: inline-block;
+		margin-top:50px;
+		margin-bottom: 65px;
+		&-two {
+			&:extend(.button--owl-content);
+			margin-right: 25px;
+			margin-top:25px;
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+
+		}
+	}
+}
+
+
