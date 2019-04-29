@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	"use strict";
+	// "use strict";
 	let navToggleButton = $('.navigation__toogle'),
 	navBlock = $('.navigation__list'),
 	navBlockOpen = 'navigation__list--open',
@@ -93,7 +93,12 @@ $('[data-fancybox="gallery"]').fancybox({
   });
 // Tooltip bootstrap
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip(
+    { container: 'body',
+    placement: 'bottom',
+    html:true
+  }
+  );
 });
 
 // Modal JQ
