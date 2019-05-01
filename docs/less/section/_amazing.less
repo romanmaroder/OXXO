@@ -11,34 +11,41 @@
 
 	}
 }
+
 .amazing-item {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	color:#fff;
 	margin: 0 15px 25px 0;
+	max-width:450px;
 	@media(min-width: 768px) {
-		margin: 0 15px 70px 0;
+		margin: 0 10px 70px 0;
 	}
 }
 
-.item__icon {
+.amazing-icon {
 	font-size: 36px;
 	color:@orang-color;
 	margin-right: 30px;
-}
-.item__content {
+	text-align: center;
+	.fa, .far, .fas {
+		width: 45px;
+	}
+	
+ }
+.amazing-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 }
-.content__title {
+.amazing-content__title {
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
-.content__descr {
+.amazing-content__descr {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 22px;

@@ -239,7 +239,7 @@
 	}
 	li {
 		margin-bottom: 15px;
-		.hide__link {
+		.navigation__link--hide {
 			color:#fff;
 			font-size: 32px;
 			font-weight: 700;
@@ -255,7 +255,7 @@
 		display: none;
 	}
 }
-.burger-btn {
+.navigation-btn {
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -266,9 +266,9 @@
 	-ms-transform: translate(-20%,-50%);
 	transform: translate(-20%,-50%);
 }
-.burger-btn span,
-.burger-btn span:after,
-.burger-btn span:before {
+.navigation-btn span,
+.navigation-btn span:after,
+.navigation-btn span:before {
 	position: absolute;
 	background-color: #fff;
 	margin-top: -2px;
@@ -280,33 +280,33 @@
 	left: 50%;
 	transition:0.2s linear;
 }
-.burger-btn:hover span,
-.burger-btn:hover span:after,
-.burger-btn:hover span:before {
+.navigation-btn:hover span,
+.navigation-btn:hover span:after,
+.navigation-btn:hover span:before {
 	background-color: @orang-color;
 }
-.burger-btn span:after,
-.burger-btn span:before {
+.navigation-btn span:after,
+.navigation-btn span:before {
 	content: "";
 	display: table;
 	-webkit-transition: 0.2s;
 	-o-transition: 0.2s;
 	transition: 0.2s;
 }
-.burger-btn span:before {
+.navigation-btn span:before {
 	-webkit-transform: translateY(10px);
 	-ms-transform: translateY(10px);
 	transform: translateY(10px);
 }
-.burger-btn span:after {
+.navigation-btn span:after {
 	-webkit-transform: translateY(-10px);
 	-ms-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
-.burger-btn-active span {
+.navigation-btn--active span {
 	height: 0;
 }
-.burger-btn-active span:before {
+.navigation-btn--active span:before {
 	background-color: #fff;
 	transition:0.3s linear;
 	-webkit-transform: rotate(-45deg);
@@ -316,7 +316,7 @@
 	-ms-transform-origin: center;
 	transform-origin: center;
 }
-.burger-btn-active span:after {
+.navigation-btn--active span:after {
 	background-color: #fff;
 	transition:0.3s linear;
 	-webkit-transform: rotate(45deg);

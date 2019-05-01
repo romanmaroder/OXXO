@@ -5,7 +5,7 @@ $(document).ready(function() {
 	navBlockOpen = 'navigation__list--open',
 	navLink = $('.navigation__list a'),
 	navIcon = $('#mobile-menu'),
-	navIconActive = 'burger-btn-active',
+	navIconActive = 'navigation-btn--active',
 	navFix = 'navigation__toogle--fixed';
 
     //Мобильная навигация
