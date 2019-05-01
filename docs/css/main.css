@@ -195,7 +195,7 @@ body {
 .navigation--second .submenu:before {
   content: "";
   position: absolute;
-  top: -39px;
+  top: -25px;
   left: 0;
   background-color: transparent;
   width: 100%;
