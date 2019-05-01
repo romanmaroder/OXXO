@@ -12,7 +12,7 @@
 		font-size: 20px;
 		font-weight: 400;
 		margin-bottom: 24px;
-		.fas, .far {
+		.fa {
 			padding-right: 10px;
 		}
 	}
@@ -39,7 +39,7 @@
 			@media (min-width: 768px)  {
 				margin-bottom: 0;
 			}
-			.fab {
+			.fa {
 				font-size: 16px;
 				line-height: 20px;
 				width: 40px;
@@ -56,7 +56,7 @@
 			&:last-child {
 				margin-right: 0;
 			}
-			&:hover .fab,
+			&:hover .fa,
 			&:focus {
 				outline: none;
 				color:@orang-color;
@@ -111,8 +111,7 @@
 			margin-bottom: 10px;
 			line-height: 1;
 			&:focus {
-				border:1px solid @orang-color;
-				outline: none;
+				outline-color: @orang-color;
 			}
 			&::-webkit-details-marker  {
 				display: none;
@@ -147,16 +146,16 @@
 
 .footer-form{
 	.form-item {
-		height: 40px;
+		// height: 40px;
 		margin-bottom: 15px;
 		position: relative;
 	}
 	.form-item--message {
-		height: 75px;
+		// height: 75px;
 	}
 	.form-item--submit {
 		margin-top: 15px;
-		.fas, .far {
+		.fa {
 			float: right;
 			left: 45px;
 		}
@@ -176,16 +175,24 @@
 
 		}
 	}
-	input[type="submit"] {
+	button[type="submit"] {
 		display: inline-block;
 		width: 115px;
-		padding: 11px 10px 10px 30px;
+		padding: 8px 10px 4px 30px;
+		border-radius:2px;
 		float:right;
 		font-size: 14px;
 		color: #fff;
 		font-weight: 300;
 		margin: 0;
+		position: relative;
 		cursor: pointer;
+		.fa {
+				padding: 0;
+				float:none;
+				line-height:1;
+				left:0;
+		}
 		&:hover {
 			color:@orang-color;
 		}
@@ -194,7 +201,7 @@
 	textarea[placeholder] {
 		text-overflow: ellipsis;
 	}
-	.fas, .far {
+	.fa {
 		width: 26px;
 		height: 26px;
 		font-size: 16px;
@@ -206,8 +213,8 @@
 		float: right;
 	}
 
-	.fas + input,
-	.far + input{
+	.fa + input,
+	.fa + input{
 		padding-right: 26px;
 	}
 	textarea {
@@ -221,8 +228,8 @@
 		color: #acabab;
 		font-size: 14px;
 		font-weight: 300;
-		position: relative;
-		bottom: 33px;
+		position: absolute;
+		bottom: 7px;
 		left: 10px;
 	}
 	textarea[required] + label{
