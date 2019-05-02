@@ -146,19 +146,15 @@
 
 .footer-form{
 	.form-item {
-		// height: 40px;
 		margin-bottom: 15px;
 		position: relative;
 	}
-	.form-item--message {
-		// height: 75px;
-	}
 	.form-item--submit {
 		margin-top: 15px;
-		.fa {
-			float: right;
-			left: 45px;
-		}
+		// .fa {
+		// 	float: right;
+		// 	left: 45px;
+		// }
 	}
 	input,
 	textarea {
@@ -187,13 +183,17 @@
 		margin: 0;
 		position: relative;
 		cursor: pointer;
+		transition:0.2s linear;
 		.fa {
 				padding: 0;
 				float:none;
 				line-height:1;
 				left:0;
+				color:#fff;
+				transition:0.2s linear;
 		}
-		&:hover {
+		&:hover,
+		&:hover .fa {
 			color:@orang-color;
 		}
 	}

@@ -1666,10 +1666,6 @@ body {
 .footer-form .form-item--submit {
   margin-top: 15px;
 }
-.footer-form .form-item--submit .fa {
-  float: right;
-  left: 45px;
-}
 .footer-form input,
 .footer-form textarea {
   width: 100%;
@@ -1697,14 +1693,20 @@ body {
   margin: 0;
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 .footer-form button[type="submit"] .fa {
   padding: 0;
   float: none;
   line-height: 1;
   left: 0;
+  color: #fff;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
-.footer-form button[type="submit"]:hover {
+.footer-form button[type="submit"]:hover,
+.footer-form button[type="submit"]:hover .fa {
   color: #ff7200;
 }
 .footer-form input[placeholder],
